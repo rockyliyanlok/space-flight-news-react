@@ -1,6 +1,7 @@
 import { useAtom } from 'jotai'
 
 import { Header } from './components/Header'
+import { Home } from './components/Home'
 import { queryAtom } from './atoms'
 
 const App = () => {
@@ -9,7 +10,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <h1>Search query: {query}</h1>
+      <Home />
     </>
   )
 }
