@@ -4,5 +4,5 @@ export type Article = {
   url: string
   imageUrl: string
   summary: string
-  publishedAt: Date
+  publishedAt: string
 }
