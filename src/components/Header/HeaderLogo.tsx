@@ -1,5 +1,5 @@
 export const HeaderLogo = () => (
-  <div className="self-center font-mono font-bold text-3xl text-white tracking-tighter">
+  <div className="font-mono font-bold text-3xl text-white tracking-tighter">
     <span>S</span>
     <span className="hidden sm:inline-block">pace</span>
     <span>F</span>
