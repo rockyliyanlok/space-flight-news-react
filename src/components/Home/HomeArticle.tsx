@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-import { Article } from '../../types/article'
+import { Article } from '../../types'
 
 type Props = {
   article: Article
@@ -14,7 +14,7 @@ export const HomeArticle = ({ article }: Props) => (
         src={article.imageUrl}
         alt={article.title}
       />
-      <h2 className="text-2xl">{article.title}</h2>
+      <h2 className="mt-4 text-2xl">{article.title}</h2>
       <p className="mt-4 text-sm hidden lg:block">{article.summary}</p>
     </Link>
     <p className="text-sm text-gray-400">
