@@ -19,12 +19,17 @@ export const ArticlePage = () => {
         <RocketLaunchIcon className="mx-auto my-12 h-12 w-12 text-gray-400 animate-bounce" />
       ) : (
         <div className="px-4 lg:px-0">
-          <img
-            className="mt-4 w-full aspect-video object-cover"
-            src={article.imageUrl}
-            alt={article.title}
-          />
-          <p className="mt-2 text-sm text-gray-400">
+          <picture>
+            <img
+              className="mt-4 w-full aspect-video object-cover"
+              src={article.imageUrl}
+              alt={article.title}
+              width="1920"
+              height="1080"
+              loading="lazy"
+            />
+          </picture>
+          <p className="mt-2 text-sm text-gray-500">
             {new Date(article.publishedAt).toLocaleString()}
           </p>
           <h2 className="mt-4 text-4xl">{article.title}</h2>
